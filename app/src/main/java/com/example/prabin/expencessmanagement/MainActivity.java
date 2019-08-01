@@ -126,6 +126,8 @@ public class MainActivity extends AppCompatActivity
             auth.signOut();
             startActivity(new Intent(getApplicationContext(), LoginActivity.class));
             finish();
+        } else if (id == R.id.Help){
+            startActivity(new Intent(getApplicationContext(), Help.class));
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
